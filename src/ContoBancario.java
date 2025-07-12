@@ -20,13 +20,13 @@ public class ContoBancario {
 
     public void deposita(double importo){
         if(importo > 0){
-            saldo += importo;
+            this.saldo += importo;
         }
     }
 
     public void preleva(double importo){
         if (importo > 0 && importo <= saldo){
-            saldo -= importo;
+            this.saldo -= importo;
         }
     }
 }
